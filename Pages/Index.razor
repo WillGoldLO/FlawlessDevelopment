@@ -1,0 +1,179 @@
+@page "/"
+
+@* ====== Hero Section with Video Background ====== *@
+<section class="hero position-relative text-white">
+    <div class="container position-relative z-2 text-center">
+        <h1 class="display-3 fw-bold">Flawless Development</h1>
+        <h2>Modern Platforms That Enterprises Can Trust</h2>
+    </div>
+    <div>
+        <img class="container position-relative z-2 text-center" src="images/image1.jpg" alt="Flawless Development" />
+    </div>
+    <video autoplay muted loop playsinline class="w-100 vh-100 object-fit-cover">
+        <source src="videos/hero.mp4" type="video/mp4" />
+    </video>
+</section>
+
+<section style="display: none; visibility: hidden; ">
+    @* ====== Logos Parallax Bar ====== *@
+    <section class="py-4 bg-light text-center position-relative overflow-hidden">
+        <div class="logos-track d-flex align-items-center">
+            <img src="images/azure-logo.png" alt="Azure" />
+            <img src="images/dotnet-logo.png" alt=".NET" />
+            <img src="images/github-logo.png" alt="GitHub" />
+            <img src="images/docker-logo.png" alt="Docker" />
+            <!-- repeat logos for seamless scroll -->
+            <img src="images/azure-logo.png" alt="Azure" />
+            <img src="images/dotnet-logo.png" alt=".NET" />
+        </div>
+    </section>
+
+    @* ====== Logos Section ====== *@
+    <section id="tech-stack" style="text-align: center; padding: 2rem;">
+        <h2>Technologies We Work With</h2>
+        <p>We specialize in secure, enterprise-grade software and infrastructure solutions using industry-leading platforms.</p>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; padding: 1rem 0;">
+            <!-- Microsoft -->
+            <div>
+                <img src="/assets/logos/microsoft.svg" alt="Microsoft" width="100" />
+                <p style="font-size: 0.8rem;">Skilled in .NET, Azure, and Windows. Not affiliated with Microsoft Corporation.</p>
+            </div>
+
+            <!-- AWS -->
+            <div>
+                <img src="/assets/logos/aws.svg" alt="Amazon Web Services" width="100" />
+                <p style="font-size: 0.8rem;">Deployments on Amazon Web Services (AWS). Not affiliated with Amazon.</p>
+            </div>
+
+            <!-- GitHub -->
+            <div>
+                <img src="/assets/logos/github.svg" alt="GitHub" width="100" />
+                <p style="font-size: 0.8rem;">CI/CD and automation using GitHub Actions. All trademarks belong to their owners.</p>
+            </div>
+
+            <!-- Docker -->
+            <div>
+                <img src="/assets/logos/docker.svg" alt="Docker" width="100" />
+                <p style="font-size: 0.8rem;">Containerized infrastructure with Docker. Trademark belongs to Docker Inc.</p>
+            </div>
+
+            <!-- Kubernetes -->
+            <div>
+                <img src="/assets/logos/kubernetes.svg" alt="Kubernetes" width="100" />
+                <p style="font-size: 0.8rem;">Cloud-native orchestration with Kubernetes. Not affiliated with CNCF.</p>
+            </div>
+
+            <!-- Cisco -->
+            <div>
+                <img src="/assets/logos/cisco.svg" alt="Cisco" width="100" />
+                <p style="font-size: 0.8rem;">Networking solutions using Cisco equipment. No affiliation implied.</p>
+            </div>
+
+            <!-- Ubiquiti -->
+            <div>
+                <img src="/assets/logos/ubiquiti.svg" alt="Ubiquiti" width="100" />
+                <p style="font-size: 0.8rem;">Wireless and LAN solutions using Ubiquiti. Not affiliated with Ubiquiti Inc.</p>
+            </div>
+
+            <!-- MikroTik -->
+            <div>
+                <img src="/assets/logos/mikrotik.svg" alt="MikroTik" width="100" />
+                <p style="font-size: 0.8rem;">Routing and firewalling with MikroTik devices. Trademarks remain property of MikroTik.</p>
+            </div>
+
+            <!-- Fortinet -->
+            <div>
+                <img src="/assets/logos/fortinet.svg" alt="Fortinet" width="100" />
+                <p style="font-size: 0.8rem;">Security deployments with Fortinet products. No official affiliation.</p>
+            </div>
+
+            <!-- Linux -->
+            <div>
+                <img src="/assets/logos/linux.svg" alt="Linux" width="100" />
+                <p style="font-size: 0.8rem;">Ubuntu, Red Hat, and other Linux-based environments supported. Logos shown under fair use.</p>
+            </div>
+        </div>
+
+        <!-- Sitewide Disclaimer -->
+        <p style="font-size: 0.75rem; margin-top: 2rem; color: #555;">
+            All product names, logos, and brands are property of their respective owners. Flawless Development is not affiliated with, endorsed by, or officially connected to any trademark holder featured here. Logos are shown to indicate technology expertise only.
+        </p>
+    </section>
+
+
+    @* ====== Animated Counters ====== *@
+    <section class="py-5 text-center bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 counter" data-count="20+">
+                    <h2 class="fw-bold count">0</h2>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="col-md-4 counter" data-count="100+">
+                    <h2 class="fw-bold count">0</h2>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="col-md-4 counter" data-count="50%">
+                    <h2 class="fw-bold count">0</h2>
+                    <p>Average Cost Savings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @* ====== Testimonials Carousel ====== *@
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What Clients Say</h2>
+            <div class="testimonial-track d-flex align-items-center">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p>"Our deployment time dropped by 70% thanks to Flawless Development."</p>
+                            <footer class="blockquote-footer">CTO, Acme Corp</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p>"They got us to 99.99% uptime in record time."</p>
+                            <footer class="blockquote-footer">VP Ops, Beta Inc</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+@* ====== Call-To-Action Footer ====== *@
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h3>Ready to elevate your IT systems?</h3>
+        <button class="btn btn-light btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">Contact Us Today</button>
+    </div>
+</section>
+
+@* ====== Contact Modal ====== *@
+<div class="modal fade" id="contactModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Get a Free Quote</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Email: Michigan.Gold.LO@gmail.com</p>
+                <p>Phone: (248) 882-8753</p>
+                <a href="/contact" class="btn btn-primary">Or Send a Message</a>
+            </div>
+        </div>
+    </div>
+</div>
