@@ -1,0 +1,95 @@
+/* site.css - custom styles */
+@font-face {
+    font-family: 'Timeburner';
+    src: url('../fonts/timeburner-xjb8.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TimeburnerBold';
+    src: url('../fonts/timeburnerbold-pegr.ttf') format('truetype');
+}
+
+body {
+    font-family: "TimeburnerBold", Tahoma, Verdana, sans-serif;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.hero {
+    background-color: #008db9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+/* Hero overlay to darken video */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Logo in hero */
+.hero-logo {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+    display: contents;
+    align-content: flex-start;
+    width: contain;
+}
+
+/* Parallax logos */
+.logos-track {
+    animation: scroll 20s linear infinite;
+}
+
+.testimonial-track {
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Counter styling */
+.counter .count {
+    font-size: 3rem;
+    animation: countUp 2s ease-out forwards;
+}
+
+/* Fade-in on scroll */
+[data-aos] {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+    [data-aos].aos-animate {
+        opacity: 1;
+    }
+
+/* Sticky navbar (assuming MainLayout applies .sticky-top) */
+/* no extra CSS needed—Bootstrap’s .sticky-top does it */
+
+.services {
+    padding: 40px 0;
+}
+
+    .services .card {
+        border: none;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+.footer {
+    background-color: #e7e0c7;
+    color: #008db9;
+    padding: 20px 0;
+    text-align: center;
+}
