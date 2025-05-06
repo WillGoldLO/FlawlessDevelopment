@@ -1,95 +1,229 @@
 @page "/services"
 
 <h2 class="mb-4">Our Services</h2>
-<p class="card-text">"At all times, we adhere to and advocate for the highest industry-specific best practices across every segment we serve. By aligning our solutions with proven standards and evolving benchmarks, we ensure our clients receive not only cutting-edge innovation but also dependable, compliant, and future-ready results. Our commitment to best practices is not just a box we check, it's a foundation for delivering consistent excellence, minimizing risk, and building long-term value in every engagement."</p>
+<p class="card-text">At all times, we adhere to and advocate for the highest industry-specific best practices across every segment we serve. By aligning our solutions with proven standards and evolving benchmarks, we ensure our clients receive not only cutting-edge innovation but also dependable, compliant, and future-ready results. Our commitment to best practices is not just a box we check, it's a foundation for delivering consistent excellence, minimizing risk, and building long-term value in every engagement.</p>
+
+<h5>Click on any card for more details on a particular offering</h5>
+<p></p>
 <h4>Software Development</h4>
 <div class="services row g-4">
-    <!-- Core Services -->
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">API & Backend Development</h5>
-                <p class="card-text">Design and build robust secure APIs and microservices, event driven designs, scalable architectures, and performance optimization. Includes monitoring and logging, RESTful APIs, and integration with Azure services.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#API">
+                <h4 class="card-title">API & Backend Development</h4>
+                <p class="card-text">Design and develop secure, high-performance APIs and resilient microservice architectures built for enterprise workloads.</p>
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">.NET & Blazor Development</h5>
-                <p class="card-text">End-to-end web application development using the latest stable versions of C#, .NET, and Blazor technologies. Includes responsive UI, secure data transfer, and flexible hosting.</p>
+    <div class="modal fade" id="API" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">API & Backend Development</h5>
+                </div>
+                <div class="modal-body">
+                    <p>From RESTful interfaces to event-driven systems, every solution is built with enterprise-grade security and engineered for scalability, observability, and compliance. Includes full telemetry integration, Azure-native service integration (e.g., Event Grid, Service Bus, API Management), and hardened authentication using OAuth2 or identity federation.</p>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">Azure Cloud Development</h5>
-                <p class="card-text">Develop code that runs in serverless architectures that is scalable, resilient, secure, and designed to reduce overall maintenance costs.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#WEB">
+                <h4 class="card-title">Website & Blazor Development</h4>
+                <p class="card-text">End-to-end web application development using modern .NET and Blazor optimized for both free-tier hosting and high-assurance regulated environments, designed for performance, maintainability, and cost efficiency.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="WEB" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Website & Blazor Development</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Includes rich, responsive, interactive UIs, strong typing across front and back end, secure data pipelines, role-based access, and multi-environment deployment strategies. Built with long-term stability, low operational overhead, and cloud-native readiness in mind.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#CLOUD">
+                <h4 class="card-title">Azure Cloud Development</h4>
+                <p class="card-text">Cloud-native development tailored for highly regulated, performance-sensitive, or cost-aware environments.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="CLOUD" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Azure Cloud Development</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Specializing in serverless architectures, durable functions, managed identity, hybrid deployments, and zero-trust design patterns. Focused on reducing total cost of ownership while maximizing resilience, telemetry, and secure integration across systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="card h-100 border-primary">
-            <div class="card-body">
-                <h5 class="card-title">Training & Knowledge Transfer </h5>
-                <p class="card-text">Hands-on workshops and mentoring in .NET, Azure, and DevOps to upskill internal teams and ensure self-sufficiency post-engagement.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#TRAIN">
+                <h4 class="card-title">Training & Knowledge Transfer</h4>
+                <p class="card-text">Accelerated team enablement through structured workshops, architectural reviews, and deep-dive sessions on .NET, Azure, and DevOps.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="TRAIN" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Training & Knowledge Transfer</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Designed for senior engineers, architects, or cross-functional teams transitioning from legacy to modern platforms. Includes code walkthroughs, real-world implementation patterns, security best practices, and practical documentation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <h4>Networking and Site Reliability</h4>
 <div class="services row g-4">
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">DevOps & CI/CD Automation</h5>
-                <p class="card-text">Implement CI/CD practices with GitHub Actions or Azure DevOps and Infrastructure-as-Code (ARM, Bicep, Terraform). Automate builds, tests, code scanning, and deployments for reliability and speed.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#DEVOPS">
+                <h4 class="card-title">DevOps & CI/CD Automation</h4>
+                <p class="card-text">Automated build, test, security, and deployment pipelines designed for enterprise-grade speed, reliability, and governance.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="DEVOPS" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">DevOps & CI/CD Automation</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Implement modern DevOps pipelines using GitHub Actions or Azure DevOps. Leverage Infrastructure-as-Code (Bicep, ARM, Terraform) to automate environment provisioning, enforce consistency, and support rapid delivery cycles. Includes secure credential handling, environment segregation, and policy compliance enforcement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="card h-100 border-primary">
-            <div class="card-body">
-                <h5 class="card-title">Disaster Recovery & Resiliency </h5>
-                <p class="card-text">Develop BCDR plans, configure geo-redundancy and automated backups in Azure to ensure business continuity.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#DR">
+                <h4 class="card-title">Disaster Recovery & Resiliency</h4>
+                <p class="card-text">Comprehensive business continuity solutions that minimize downtime and ensure recoverability under real-world failure conditions.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="DR" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Disaster Recovery & Resiliency</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Design and implement BCDR strategies tailored to your risk profile. Includes Azure-native geo-redundancy, backup automation, cross-region replication, cold/warm failover setups, and regular validation testing to ensure recovery time and point objectives are actually met.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">Site Reliability Engineering</h5>
-                <p class="card-text">Apply SRE best practices: monitoring, alerting, SLO/SLI definition, incident response automation, and chaos testing to improve system uptime and performance.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#SRE">
+                <h4 class="card-title">Site Reliability Engineering (SRE)</h4>
+                <p class="card-text">Modern SRE practices that bridge DevOps and operations to keep critical systems stable, observable, and continuously improving.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="SRE" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Site Reliability Engineering (SRE)</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Establish meaningful SLOs/SLIs, enable proactive alerting, automate incident response workflows, and use chaos engineering to validate resilience. Includes full telemetry integration (logs, metrics, traces) and runbook creation for operational maturity.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">Site Surveys & Technical Assessments</h5>
-                <p class="card-text">On-site and remote assessments for small orgs (under 100 employees) covering network, security, and infrastructure, with actionable improvement plans.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#SURVEY">
+                <h4 class="card-title">Site Surveys & Technical Assessments</h4>
+                <p class="card-text">Focused infrastructure and security evaluations for small businesses, with clear, prioritized improvement plans.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="SURVEY" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Site Surveys & Technical Assessments</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Conduct on-site or remote assessments of networking, systems, and cloud posture. Ideal for organizations under 100 employees. Deliver actionable roadmaps covering wireless reliability, firewall configuration, device security, network segmentation, and cloud integration readiness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <h4>Modernization and Cloud Migrations</h4>
 <div class="services row g-4">
+
     <div class="col-md-6">
         <div class="card h-100">
-            <div class="card-body">
-                <h5 class="card-title">Azure Cloud Architecture & Migrations</h5>
-                <p class="card-text">Design and execute lift-and-shift or refactoring migrations for organizations up to 300 employees. Provision Azure VMs, App Services, Azure SQL, and implement scalable cloud solutions.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#LIFT">
+                <h4 class="card-title">Azure Cloud Architecture & Migrations</h4>
+                <p class="card-text">Enterprise-grade cloud transformations for small to mid-sized organizations—designed for stability, security, and long-term cost control.</p>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="LIFT" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Azure Cloud Architecture & Migrations</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Plan and execute both lift-and-shift and full modernization strategies tailored to businesses with up to 300 employees. Includes provisioning of Azure VMs, App Services, Azure SQL, and integration with managed identity, networking, and monitoring systems. Refactor legacy systems into cloud-native architectures where beneficial, balancing modernization with ROI.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="col-md-6">
         <div class="card h-100 border-primary">
-            <div class="card-body">
-                <h5 class="card-title">Cloud Cost Optimization </h5>
-                <p class="card-text">Analyze Azure deployments for cost inefficiencies, recommend reserved instances, rightsizing, and auto-scaling strategies to minimize expenses.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#COST">
+                <h4 class="card-title">Cloud Cost Optimization</h4>
+                <p class="card-text">Reduce waste, increase efficiency, and scale with precision without sacrificing security or reliability.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="COST" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cloud Cost Optimization</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Perform deep analysis of your Azure workloads to uncover underused resources, misaligned service tiers, or overlooked cost drivers. Implement rightsizing, reserved instance planning, intelligent auto-scaling, and workload scheduling. Optimize for performance and budget while maintaining regulatory or SLA-driven availability.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -97,20 +231,48 @@
 
 <h4>Compliance</h4>
 <div class="services row g-4">
+
     <div class="col-md-6">
         <div class="card h-100 border-primary">
-            <div class="card-body">
-                <h5 class="card-title">Security & Compliance </h5>
-                <p class="card-text">Conduct security audits, implement Azure security best practices (Entra ID, Key Vault), and assist with SOC 2 or HIPAA compliance.</p>
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#SECURITY">
+                <h4 class="card-title">Security & Compliance</h4>
+                <p class="card-text">Enterprise-grade security architecture, policy enforcement, and compliance support—built into every solution.</p>
             </div>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="card h-100 border-primary">
-            <div class="card-body">
-                <h5 class="card-title">SOX and HIPAA Compliance </h5>
-                <p class="card-text">Familiarity with common industry standards and the systems and processes required to maintain compliance.</p>
+    <div class="modal fade" id="SECURITY" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Security & Compliance</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Perform targeted or full-scope security audits of your Azure and on-prem environments. Implement Azure security best practices including Entra ID (formerly Azure AD), Role-Based Access Control (RBAC), Key Vault, Defender for Cloud, and secure CI/CD. Provide documentation, remediations, and controls needed for SOC 2, HIPAA, and ISO-aligned readiness. Also available for startups preparing for their first audit.</p>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div class="col-md-6">
+        <div class="card h-100 border-primary">
+            <div class="card-body" data-bs-toggle="modal" data-bs-target="#COMPLIANCE">
+                <h4 class="card-title">SOX and HIPAA Compliance</h4>
+                <p class="card-text">Expertise in regulated environments where system integrity, auditability, and traceability are non-negotiable.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="COMPLIANCE" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">SOX and HIPAA Compliance</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Support for Sarbanes-Oxley (SOX) and HIPAA compliance efforts through proper logging, access control, change management, and data security practices. Design or audit technical controls to ensure compliance posture aligns with your risk and governance needs without overengineering your systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
