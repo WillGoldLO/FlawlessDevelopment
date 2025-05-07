@@ -2,7 +2,6 @@
 
 <style>
     .hero {
-        min-height: 100vh;
         background: linear-gradient(135deg, #1a365d 0%, #2B6CB0 100%);
         position: relative;
         overflow: hidden;
@@ -62,7 +61,7 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
         padding: 4rem 2rem;
-        background: #F7FAFC;
+        background: var(--primary-gradient);
     }
 
     .service-card {
@@ -109,22 +108,34 @@
     }
 
     .expertise-item {
-        padding: 1.5rem;
-        border-left: 4px solid #2B6CB0;
-        background: #F7FAFC;
-        border-radius: 0 8px 8px 0;
+        text-align: center;
+        padding: 2rem;
+        background: var(--background-light);
+        border-radius: 15px;
+        transition: var(--transition-standard);
+    }
+
+    .expertise-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+    }
+
+    .expertise-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary-dark);
     }
 
     .expertise-title {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         font-weight: 600;
-        color: #2D3748;
         margin-bottom: 0.5rem;
+        color: var(--text-dark);
     }
 
     .expertise-description {
-        color: #4A5568;
-        font-size: 0.95rem;
+        color: var(--text-light);
+        font-size: 0.9rem;
     }
 
     .cta-section {
@@ -248,7 +259,7 @@
     <div class="container cta-content">
         <h2 class="mb-4">Ready to Transform Your Business?</h2>
         <p class="mb-4">Let's discuss how we can help you achieve your goals with modern technology solutions.</p>
-        <button class="cta-button" @onclick="() => ShowContactModal()">Contact Us Today</button>
+        <a href="/contact" class="cta-button">Contact Us Today</a>
     </div>
 </section>
 
@@ -262,9 +273,32 @@
                     <button type="button" class="btn-close" @onclick="() => HideContactModal()"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Email: Michigan.Gold.LO@gmail.com</p>
-                    <p>Phone: (248) 882-8753</p>
-                    <a href="/contact" class="btn btn-primary">Send a Message</a>
+                    <form class="contact-form">
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="Your Email" required />
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Company Name" />
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button w-100">Send Message</button>
+                    </form>
+
+                    <div class="contact-info mt-4">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text">Michigan.Gold.LO@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span class="contact-text">(248) 882-8753</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
