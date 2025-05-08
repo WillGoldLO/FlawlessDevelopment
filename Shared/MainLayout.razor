@@ -1,13 +1,15 @@
 @inherits LayoutComponentBase
 
 <div class="d-flex flex-column min-vh-100">
-  <NavMenu />
-  <div class="flex-fill container py-4">
-    @Body
-  </div>
-  <footer class="footer mt-auto">
-    <div class="container text-center">
-      <small>&copy; @DateTime.Now.Year Flawless Development LLC</small>
+    <div class="flex-fill container py-4">
+        <NavMenu />
+        @Body
+
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <small>&copy; @DateTime.Now.Year Flawless Development LLC</small>
+        </div>
+    </footer>
+
     </div>
-  </footer>
 </div>
