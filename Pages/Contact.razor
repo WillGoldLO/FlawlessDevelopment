@@ -9,30 +9,28 @@
         overflow: hidden;
     }
 
-    .page-header::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
-        z-index: 1;
-    }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 100%);
+            z-index: 1;
+        }
 
-    .page-header::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: 
-            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-            linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-        background-size: 50px 50px;
-        z-index: 1;
-    }
+        .page-header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 1;
+        }
 
     .header-content {
         position: relative;
@@ -65,10 +63,10 @@
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .form-control:focus {
-        border-color: var(--primary-light);
-        box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
-    }
+        .form-control:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+        }
 
     .submit-button {
         background: linear-gradient(135deg, #1a365d 0%, #2B6CB0 100%);
@@ -80,10 +78,10 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .submit-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(43, 108, 176, 0.2);
-    }
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(43, 108, 176, 0.2);
+        }
 
     .contact-info {
         margin-top: 3rem;
