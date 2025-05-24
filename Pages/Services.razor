@@ -1,4 +1,6 @@
 @page "/services"
+@using FlawlessDevelopment.Shared.Models
+@inject FlawlessDevelopment.Shared.Services.MetaService MetaService
 
 <style>
     .service-section {
@@ -266,3 +268,16 @@
         <a href="/contact" class="cta-button">Contact Us</a>
     </div>
 </section>
+
+@code {
+    protected override void OnInitialized()
+    {
+        MetaService.SetMetaTags(new MetaTags
+            {
+                Title = "Flawless Development - Services",
+                Description = "Explore our range of services including software development, cloud architecture, and compliance solutions.",
+                Keywords = "software development, cloud architecture, compliance, Azure, DevOps",
+                Author = "Flawless Development"
+            });
+    }
+}
