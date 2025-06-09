@@ -1,3 +1,3 @@
 # FlawlessDevelopment
 
-This is the corporation static website.
+This is the OLD corporation static website for backup purposes during the transition to monorepo.
